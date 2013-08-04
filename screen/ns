@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Simple script to create new screen 'ns' and opening ssh $NAME in that new
+# screen without doing ctrl-a+c which creates a shell first
+
+# Usage: ns <host>
+
+NAME=$1
+# Uncomment the following to remove any domain name after hostname
+#NAME=`echo $1 | awk -F"." '{print $1}'`
+
+screen -t $NAME -p 0 ssh $1 -X

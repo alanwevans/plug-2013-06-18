@@ -1,0 +1,8 @@
+1. What is parallel?
+  a. like xargs but better!
+  b. just a perl script, no special CPAN modules needed
+2. Why is it better than xargs?
+  a. newer xargs can run things in parallel too
+  b. lots of expansion
+  c. very flexible
+3. Examples
